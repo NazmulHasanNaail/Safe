@@ -1,0 +1,58 @@
+/*  Theme Responsive Css */
+
+
+@media only screen and (max-width: 5000px){
+
+
+}
+
+@media only screen and (max-width: 19200px){
+
+
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    .menu-area .main-menu{
+        display: none
+      }
+      .menu-area .mobile-nav-toggler{
+        display: block;
+      }
+      .menu-area .menu-right-content{
+          border: none;
+      }
+}
+
+
+
+@media only screen and (max-width: 991px){
+    .main-header .header-top .top-contact{
+        margin-bottom: 5PX;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+
+
+}
+
+
+@media only screen and (max-width: 499px){
+    .main-header .header-top .top-contact li,
+    .main-header .header-top .top-contact li:not(:last-child){
+         margin: 0 10px;
+    }
+    .main-header .header-top .top-contact li:not(:last-child):before{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+
+}
