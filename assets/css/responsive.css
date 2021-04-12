@@ -37,7 +37,13 @@
 
 
 @media only screen and (max-width: 767px){
-
+    .banner-section .pattern-layer{
+        display: none;
+    }
+    .banner-section .content-inner h1{
+        font-size: 36px;
+        line-height: 44px;;
+    }
 
 }
 
@@ -49,6 +55,9 @@
     }
     .main-header .header-top .top-contact li:not(:last-child):before{
         display: none;
+    }
+    .banner-section .content-inner{
+        padding: 65px 30px;
     }
 }
 
