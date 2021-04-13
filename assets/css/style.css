@@ -676,10 +676,205 @@ div#mCSB_1_container{
   margin-bottom: 23px;
 }
 
+/** about-section **/
+.about-section{
+  padding: 150px 0px;
+}
+.about-section .image-box{
+  position: relative;
+  padding: 0px 150px 160px 0px;
+}
+.about-section .image-box img{
+ width: 100%;
+ border-radius: 10px;
+}
+.about-section .image-box .image-1{
+  border-radius: 10px;
+}
+.about-section .image-box .image-1:before{
+  position: absolute;
+  top: 0;
+  left: -75%;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, .3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  -webkit-transform: skewX(-25deg);
+  -ms-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
 
+.about-section .image-box:hover .image-1:before{
+  -webkit-animation: shine 1s;
+  animation: shine 1s;
+}
 
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
 
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
 
+.about-section .image-box .image-2{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px #d3dce8;
+}
+.about-section .image-box .clients-box{
+  position: absolute;
+  left: 50px;
+  bottom: 40px;
+  background: #fff;
+  max-width: 245px;
+  width: 100%;
+  border-radius: 7px;
+  padding: 19px 20px 15px 85px;
+  box-shadow: 0 15px 50px #d3dce8;
+}
+.about-section .image-box .clients-box .clients-thumb{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.about-section .image-box .clients-box .clients-thumb img{
+  width: 100%;
+  border-radius: 5px;
+}
+.about-section .image-box .clients-box h3{
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.about-section .image-box .clients-box span{
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'Poppins', sans-serif;
+  color: #727272;
+  font-weight: 500;
+}
+.about-section .image-box .pattern-box .pattern-one{
+  position: absolute;
+  left: -45px;
+  top: 50px;
+  width: 95px;
+  height: 95px;
+  background-repeat: no-repeat;
+}
+.about-section .image-box .pattern-box .pattern-two{
+  position: absolute;
+  right: -28px;
+  bottom: 215px;
+  width: 95px;
+  height: 95px;
+  background-repeat: no-repeat;
+}
+.about-section .content-box .upper-box{
+  padding-bottom: 60px;
+  margin-bottom: 41px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.about-section .content-box  .sec-title{
+  margin-bottom: 32px;
+}
+.about-section .content-box .btn-box{
+  margin-top: 45px;
+}
+.counter-block-one{
+  position: relative;
+  padding-left: 45px;
+}
+
+.counter-block-one .icon-box{
+  position: absolute;
+  left: 0px;
+  top: 9px;
+  width: 26px;
+  height: 32px;
+}
+.counter-block-one .icon-box:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.2;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 60% 0%);
+}
+.counter-block-one .icon-box .dotted{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.counter-block-one .icon-box .dotted-1{
+  left: 0px;
+  top: 6px;
+}
+.counter-block-one .icon-box .dotted-2{
+  top: 6px;
+  right: 6px;
+}
+.counter-block-one .icon-box .dotted-3{
+  right: 6px;
+  bottom: 6px;
+}
+.counter-block-one .count-outer{
+  position: relative;
+  display: block;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: #00224f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.counter-block-one p{
+  font-size: 17px;
+  line-height: 24px;
+  color: #00224f;
+  font-weight: 600;
+}
+.about-section .pattern-layer .pattern-one{
+  position: absolute;
+  top: 70px;
+  right: 300px;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+}
+
+.about-section .pattern-layer .pattern-two{
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  background: #f7f8f9;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-animation: zoom-fade 5s infinite linear;
+  animation: zoom-fade 5s infinite linear;
+}
 /** main-footer **/
 .main-footer{
   position: relative;

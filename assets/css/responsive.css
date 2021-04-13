@@ -32,7 +32,12 @@
         margin-bottom: 5PX;
     }
 
-
+    .about-section .image-box{
+        margin-right: 0px !important;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        max-width: 520px;
+    }
 }
 
 
@@ -43,6 +48,16 @@
     .banner-section .content-inner h1{
         font-size: 36px;
         line-height: 44px;;
+    }
+    .about-section {
+        padding: 70px 0px 55px 0px;
+    }
+    .about-section .content-box{
+        margin-left: 0 !important;
+    }
+    .sec-title h2 {
+        font-size: 32px;
+        line-height: 42px;
     }
 
 }
@@ -60,7 +75,15 @@
         padding: 65px 30px;
     }
 }
-
+@media only screen and (max-width: 399px){
+    .about-section .image-box{
+        padding: 0;
+    }
+    .about-section .image-box .image-2{
+        position: relative;
+        margin-top: 10px;
+    }
+}
 @media only screen and (min-width: 768px){
 
 
