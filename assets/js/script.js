@@ -106,5 +106,107 @@
 			
 		},{accY: 0});
 	}
+	
+	//Accordion Box
+	if($('.accordion-box').length){
+		$(".accordion-box").on('click', '.acc-btn', function() {
+			
+			var outerBox = $(this).parents('.accordion-box');
+			var target = $(this).parents('.accordion');
+			
+			if($(this).hasClass('active')!==true){
+				$(outerBox).find('.accordion .acc-btn').removeClass('active');
+			}
+			
+			if ($(this).next('.acc-content').is(':visible')){
+				return false;
+			}else{
+				$(this).addClass('active');
+				$(outerBox).children('.accordion').removeClass('active-block');
+				$(outerBox).find('.accordion').children('.acc-content').slideUp(300);
+				target.addClass('active-block');
+				$(this).next('.acc-content').slideDown(300);	
+			}
+		});	
+	}
+	// clients-carousel
+	if ($('.clients-carousel').length) {
+		$('.clients-carousel').owlCarousel({
+			loop:true,
+			margin:30,
+			nav:false,
+			smartSpeed: 3000,
+			autoplay: true,
+			navText: [ '<span class="icon-Arrow-Left"></span>', '<span class="icon-Arrow-Right"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:2
+				},
+				600:{
+					items:3
+				},
+				800:{
+					items:4
+				},			
+				1200:{
+					items:5
+				}
+
+			}
+		});    		
+	}
+	
+	//two-column-carousel
+	if ($('.two-column-carousel').length) {
+		$('.two-column-carousel').owlCarousel({
+			loop:true,
+			margin:30,
+			nav:true,
+			smartSpeed: 1000,
+			autoplay: 500,
+			navText: [ '<span class="fas fa-algle-left"></span>', '<span class="fas fa-algle-left-right"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				800:{
+					items:2
+				},
+				1024:{
+					items:2
+				}
+			}
+		});    		
+	}
+	//Contact Form Validation
+	if($('#contact-form').length){
+		$('#contact-form').validate({
+			rules: {
+				fname: {
+					required: true
+				},
+				lname: {
+					required: true,
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				message: {
+					required: true
+				}
+			}
+		});
+	}
+
 
 })(window.jQuery);

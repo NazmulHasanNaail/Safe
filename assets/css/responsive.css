@@ -23,6 +23,16 @@
       .menu-area .menu-right-content{
           border: none;
       }
+      .news-section .pattern-layer {
+        display: none;
+    }
+    .contact-section .pattern-layer .pattern-1,
+    .contact-section .image-layer {
+        display: none;
+    }
+    #content_block_4 .content-box {
+        margin-left: 0px !important;
+    }
 }
 
 
@@ -38,6 +48,41 @@
         margin-left: 0px;
         max-width: 520px;
     }
+    .services-section .pattern-layer {
+        display: none;
+    }
+    .chooseus-section .bg-column {
+        display: none;
+    }
+    .chooseus-section .content-column {
+        width: 100%;
+    }
+    .team-section .title-inner .sec-title {
+        width: 100%;
+        padding-right: 0px !important;
+        margin-bottom: 20px;
+    }
+    .team-section .title-inner .text {
+        width: 100%;
+        margin: 0px !important;
+    }
+    .team-section .title-inner {
+        margin-bottom: 30px;
+    }
+    .footer-top {
+        padding-bottom: 90px;
+    }
+    .footer-top .footer-widget {
+        margin: 0px 0px 30px 0px !important;
+    }
+    .footer-bottom .bottom-inner {
+        display: block;
+        text-align: center;
+    }
+    .footer-bottom .bottom-inner .footer-logo {
+        display: block;
+        padding: 10px 0px;
+    }    
 }
 
 
@@ -58,6 +103,54 @@
     .sec-title h2 {
         font-size: 32px;
         line-height: 42px;
+    }
+    .services-section {
+        padding: 65px 0px 70px 0px;
+    }
+    .team-section {
+        padding: 65px 0px 40px 0px;
+    }
+    .team-block-one {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+    .service-block-one {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+    .clients-section {
+        padding: 80px 0px 220px 0px;
+    }
+    .testimonial-section {
+        padding-bottom: 70px;
+    }
+    .testimonial-section .pattern-layer {
+        display: none;
+    }
+    .owl-dots, .owl-nav {
+        display: none !important;
+    }
+    .video-section {
+        padding: 120px 0px 220px 0px;
+    }
+    .cta-section .inner-container {
+        padding-left: 50px;
+    }
+    .news-section {
+        padding: 65px 0px 40px 0px;
+    }
+    .news-block-one {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+    .contact-section {
+        padding: 65px 0px 70px 0px;
+    }
+    .contact-section .pattern-layer {
+        display: none;
+    }
+    .footer-top {
+        padding: 80px 0px 50px 0px;
     }
 
 }
