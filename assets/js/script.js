@@ -1,6 +1,35 @@
 (function($) {
 	
 	"use strict";
+	
+	//Update Header Style and Scroll to Top
+	function headerStyle() {
+		if($('.main-header').length){
+			var windowpos = $(window).scrollTop();
+			var siteHeader = $('.main-header');
+			var scrollLink = $('.scroll-top');
+			if (windowpos >= 110) {
+				siteHeader.addClass('fixed-header');
+				scrollLink.addClass('open');
+			} else {
+				siteHeader.removeClass('fixed-header');
+				scrollLink.removeClass('open');
+			}
+		}
+	}
+	headerStyle();
+	// Scroll to a Specific Div
+	if($('.scroll-to-target').length){
+		$(".scroll-to-target").on('click', function() {
+			var target = $(this).attr('data-target');
+		   // animate
+		   $('html, body').animate({
+			   scrollTop: $(target).offset().top
+			 }, 1000);
+	
+		});
+	}
+
 
 	//Mobile Nav Hide Show
 	if($('.mobile-menu').length){
@@ -207,6 +236,34 @@
 			}
 		});
 	}
+	
+	// Elements Animation
+	if($('.wow').length){
+		var wow = new WOW({
+		mobile:       false
+		});
+		wow.init();
+	}
+
+
+	//LightBox / Fancybox
+	if($('.lightbox-image').length) {
+		$('.lightbox-image').fancybox({
+			openEffect  : 'fade',
+			closeEffect : 'fade',
+			helpers : {
+				media : {}
+			}
+		});
+	}
+
+  /* ==========================================================================
+   When document is Scrollig, do
+   ========================================================================== */
+	
+   $(window).on('scroll', function() {
+	headerStyle();
+});
 
 
 })(window.jQuery);

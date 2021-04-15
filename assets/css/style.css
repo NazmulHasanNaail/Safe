@@ -1,5 +1,5 @@
  
-/* Css For Metlife */
+/* Css For Safe */
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -678,6 +678,7 @@ div#mCSB_1_container{
 
 /** about-section **/
 .about-section{
+  position: relative;
   padding: 150px 0px;
 }
 .about-section .image-box{
@@ -730,46 +731,6 @@ div#mCSB_1_container{
   bottom: 0px;
   border-radius: 10px;
   box-shadow: 0 15px 50px #d3dce8;
-}
-.about-section .image-box .clients-box{
-  position: absolute;
-  left: 50px;
-  bottom: 40px;
-  background: #fff;
-  max-width: 245px;
-  width: 100%;
-  border-radius: 7px;
-  padding: 19px 20px 15px 85px;
-  box-shadow: 0 15px 50px #d3dce8;
-}
-.about-section .image-box .clients-box .clients-thumb{
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-}
-.about-section .image-box .clients-box .clients-thumb img{
-  width: 100%;
-  border-radius: 5px;
-}
-.about-section .image-box .clients-box h3{
-  display: block;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-bottom: 0px;
-}
-
-.about-section .image-box .clients-box span{
-  position: relative;
-  display: block;
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'Poppins', sans-serif;
-  color: #727272;
-  font-weight: 500;
 }
 .about-section .image-box .pattern-box .pattern-one{
   position: absolute;
@@ -854,7 +815,7 @@ div#mCSB_1_container{
   color: #00224f;
   font-weight: 600;
 }
-.about-section .pattern-layer .pattern-one{
+.about-section .pattern-layer .pattern-layer-one{
   position: absolute;
   top: 70px;
   right: 300px;
@@ -863,7 +824,7 @@ div#mCSB_1_container{
   background-repeat: no-repeat;
 }
 
-.about-section .pattern-layer .pattern-two{
+.about-section .pattern-layer .pattern-layer-two{
   position: absolute;
   top: 80px;
   right: 80px;
