@@ -1,7 +1,19 @@
 (function($) {
 	
 	"use strict";
-	
+		
+	//Hide Loading Box (Preloader)
+	function handlePreloader() {
+		if($('.loader-wrap').length){
+			$('.loader-wrap').delay(1000).fadeOut(500);
+		}
+	}
+
+	if ($(".preloader-close").length) {
+        $(".preloader-close").on("click", function(){
+            $('.loader-wrap').delay(200).fadeOut(500);
+        })
+    }
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
 		if($('.main-header').length){
@@ -263,6 +275,14 @@
 	
    $(window).on('scroll', function() {
 	headerStyle();
+});
+	
+	/* ==========================================================================
+   When document is loaded, do
+   ========================================================================== */
+	
+   $(window).on('load', function() {
+	handlePreloader();
 });
 
 

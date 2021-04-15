@@ -149,18 +149,6 @@ h1,h2,h3,h4,h5,h6{
   background: #fff;
 }
 
-.preloader-close{
-  position: fixed;
-  z-index: 999999;
-  font-size: 14px;
-  line-height: 26px;
-  color: #fff;
-  padding: 10px 20px 8px 20px;
-  cursor: pointer;
-  right: 0;
-  bottom: 0;
-  font-weight: 500;
-}
 
 .handle-preloader .animation-preloader {
   position: absolute;
@@ -170,9 +158,9 @@ h1,h2,h3,h4,h5,h6{
 .handle-preloader .animation-preloader .spinner{
   animation: spinner 1s infinite linear;
   border-radius: 50%;
-  height: 150px;
+  height: 100px;
   margin: 0 auto 45px auto;
-  width: 150px;
+  width: 100px;
 }
 
 .handle-preloader .animation-preloader .txt-loading {
@@ -228,7 +216,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .handle-preloader .animation-preloader .spinner{
-  border-top-color: rgba(14, 231, 197, 0.2); 
+  border-top-color:rgba(225, 36, 84, 0.2); 
 }
 
 /* AnimaciÃ³n del preloader */
